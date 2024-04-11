@@ -1,0 +1,9 @@
+body {
+    background-color: lightcoral;
+}
+h1 {
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    color: rgba(0, 0, 0, 1;
+}
