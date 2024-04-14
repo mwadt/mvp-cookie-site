@@ -20,6 +20,9 @@ p {
     font-size: 40px;
     font-weight: bold;
 }
+.cookie-choice-output {
+    font-size: 22px;
+}
 
 /* .buzzer-container { 
     display: flex;
@@ -31,20 +34,34 @@ p {
     max-width: 100%;
     max-height: 100%;
 } */
-.main-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-button {
+
+ button {
     font-size: 22px;
     font-weight: bold;
     
     background-color: black;
     color: lightcoral;
+    
+    
+}
+/* positions the main button's container */
+.main-button { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-button button {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    
+}
+
+.cookie-choice-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+    color: black;
+    gap: 10px;
 }
