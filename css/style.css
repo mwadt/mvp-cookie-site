@@ -22,7 +22,10 @@ p {
 }
 .cookie-choice-output {
     font-size: 22px;
+    opacity: 0;
+    transition: opacity 5300ms;
 }
+
 
 /* .buzzer-container { 
     display: flex;
@@ -42,7 +45,12 @@ p {
     
     background-color: black;
     color: lightcoral;
+    transition-duration: 350ms;
+
     
+}
+button:hover {
+    background-color: gray;
     
 }
 /* positions the main button's container */
@@ -52,11 +60,15 @@ p {
     justify-content: center;
     
 }
+.main-button:hover {
+    transform: rotate(25deg);
+}
 .main-button button {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
+
 
 .cookie-choice-buttons {
     display: flex;
@@ -64,4 +76,22 @@ p {
     background-color: lightcoral;
     color: black;
     gap: 10px;
+    transition-duration: 5000ms;
+}
+.img-test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.img-test img{
+     
+     width: 400px;
+     height: 400px;
+
+}
+.img-test:hover  {
+    display: block;
 }

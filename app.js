@@ -23,8 +23,8 @@ const youWin = () => {
     alert('You won!');
     paragraph.textContent = `You won a cookie!  What kind of cookie would you like?`;
     clearTimeout(buzzerTimeout);
+    buzzer.removeEventListener('click', youWin);
 
-    
     
     const cookieChoice1 = document.createElement('button');
     const cookieChoice2 = document.createElement('button');
