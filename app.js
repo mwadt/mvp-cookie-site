@@ -2,7 +2,7 @@ const paragraph = document.getElementById('win');
 const choiceOutput = document.getElementById('cookie-choice-output');
 const buzzer = document.querySelector('#cookieButton');
 let newButtons = document.querySelector('.cookie-choice-buttons');
-console.dir(buzzer);
+const selectionPic = document.querySelector('.cookie-selection-pic');
 
 // const selectionMessage1 = () => {
 //     let choiceMessage1 = document.createElement('p');
@@ -80,6 +80,10 @@ const youWin = () => {
             choiceMessage.textContent = `You chose a ${cookieChoice4.textContent}!  Excellent Choice!`
             choiceOutput.appendChild(choiceMessage);
             cookieChoiceEventRemover();
+            // let cookieImage = document.createElement('img');
+            // cookieImage.setAttribute('class', 'cookie-selection-pic');
+            // cookieImage.src = './images/test cookie.jpg';
+            // selectionPic.appendChild(cookieImage);
         }
         
     }
