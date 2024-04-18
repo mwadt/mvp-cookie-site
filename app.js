@@ -7,7 +7,7 @@ const winLoseText = document.querySelector('.win-lose-post');
 
 
 const youLose = () => {
-    
+    // alert('You Lose');
     const loseAlert = document.createElement('h2');
     loseAlert.textContent = 'YOU LOSE!!! TRY AGAIN!!!';
     loseAlert.style.fontWeight = 'bold';
@@ -24,7 +24,7 @@ const youWin = () => {
     winAlert.style.fontWeight = 'bold';
     winAlert.style.fontSize = '26px'; 
     winLoseText.appendChild(winAlert);
-    alert('You Win!')
+    // alert('You Win!');
     paragraph.textContent = `You won a cookie!  What kind of cookie would you like?`;
     clearTimeout(buzzerTimeout);
     buzzer.removeEventListener('click', youWin);
