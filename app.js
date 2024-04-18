@@ -3,24 +3,28 @@ const choiceOutput = document.getElementById('cookie-choice-output');
 const buzzer = document.querySelector('#cookieButton');
 let newButtons = document.querySelector('.cookie-choice-buttons');
 const selectionPic = document.querySelector('.cookie-selection-pic');
+const winLoseText = document.querySelector('.win-lose-post');
 
-// const selectionMessage1 = () => {
-//     let choiceMessage1 = document.createElement('p');
-//     choiceMessage1.textContent = 'You chose Chocolate Chip!  Excellent Choice!';
-//     choiceOutput.appendChild(choiceMessage1);
-// }
 
 const youLose = () => {
-    console.log('You lose');
-    alert('You lose');
+    
+    const loseAlert = document.createElement('h2');
+    loseAlert.textContent = 'YOU LOSE!!! TRY AGAIN!!!';
+    loseAlert.style.fontWeight = 'bold';
+    loseAlert.style.fontSize = '40px'; 
+    winLoseText.appendChild(loseAlert);
     buzzer.removeEventListener('click', youWin);
 
 }
 
 //lets the user know they won, creates cookie choice buttons
 const youWin = () => {   
-    
-    alert('You won!');
+    const winAlert = document.createElement('h2');
+    winAlert.textContent = 'WINNER!!!';
+    winAlert.style.fontWeight = 'bold';
+    winAlert.style.fontSize = '26px'; 
+    winLoseText.appendChild(winAlert);
+    alert('You Win!')
     paragraph.textContent = `You won a cookie!  What kind of cookie would you like?`;
     clearTimeout(buzzerTimeout);
     buzzer.removeEventListener('click', youWin);
